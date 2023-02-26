@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1>Grocery List</h1>
+    </header>
+    <main>
+        <form id="grocery-form">
+            <div class="form-group">
+                <label for="grocery-input">Grocery Item:</label>
+                <input type="text" list="addthis" id="grocery-input" required />
+                <datalist  id="addthis">
+                    <option value="Coca">
+                    <option value="Coca Cherry">
+                    <option value="Coca Zero">
+                    <option value="Red Bull">
+                    <option value="Oasis Tropical">
+                    <option value="Oasis Pomme-Poire">
+                    <option value="Ice-T Peache">
+                    <option value="Ice-T Citron">
+                    <option value="Ice-T Fraimboise">
+                    <option value="Hawaii">
+                    <option value="Christaline">
+                    <option value="Sprite">
+                    <option value="Minute Maid Tropical">
+                    <option value="Minute Maid Orange">
+                    <option value="Fanta">
+                    <option value="Fanta Exotique">
+                    <option value="Fanta Fruit de dragon">
+                    <option value="Schweppes Pomme">
+                    <option value="Schweppes Agrumes">
+                    <option value="Orangina">
+                    <option value="Sanpeligrino Citron">
+                    <option value="Sanpelegrino Orange">
+                    <option value="Sprite">
+                    <option value="Perrier">
+                    <option value="Kebab kg">
+                    <option value="Papier Kebab">
+                    <option value="Boite de Burger">
+                    <option value="Frites">
+                    <option value="Pains 1005">
+                    <option value="Pains 1002">
+                    <option value="Galette">
+                    <option value="Mayo">
+                    <option value="Ketchup">
+                    <option value="Mayo stick">
+                    <option value="Ketchup stick">
+                    <option value="Steak 80gm">
+                    <option value="Fromage Chedar">
+                    <option value="Huil ltr">
+                    <option value="Bigi">
+                    <option value="Algerian">
+                    <option value="Samurai">
+                    <option value="BBQ">
+                    <option value="Tartare">
+                    <option value="Curry">
+                    <option value="Harisa">
+                    <option value="Tiramisu">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+                    <option value="">
+
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="quantity-input">Quantity:</label>
+                <input type="number" id="quantity-input" min="1" required />
+            </div>
+            <button type="submit" class="add-button">Add Item</button>
+        </form>
+        <table id="grocery-list">
+            <thead>
+                <tr>
+                    <th>Grocery Item</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="generate-list">
+            <button id="generate-list-btn" class="generate-button">Show</button>
+        </div>
+    </main>
+   
+</body>
+<script src="index.js"></script>
+</html>
