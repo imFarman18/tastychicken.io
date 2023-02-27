@@ -7,57 +7,6 @@
     <title>Grocery List</title>
     <link rel="stylesheet" href="index.css" />
 </head>
-<style>
-    @media only screen and (max-width: 768px) {
-  /* Set height of datalist to 250px */
-  #addthis {
-    height: 250px;
-  }
-
-  /* Show 7 options at a time and allow scrolling for the rest */
-  #grocery-input::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  #grocery-input::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-  }
-
-  #grocery-input::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  #grocery-input::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  #grocery-input::-webkit-scrollbar-button {
-    display: none;
-  }
-
-  #grocery-input::-webkit-scrollbar-corner {
-    display: none;
-  }
-
-  #addthis option:nth-child(n+8) {
-    display: none;
-  }
-
-  #grocery-input:focus + #addthis option:nth-child(n+8) {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 250px;
-    overflow-y: scroll;
-  }
-}
-
-</style>
-
-
 
 <body>
 
